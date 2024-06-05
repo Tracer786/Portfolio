@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-}
+}style.css
 html{
     scroll-behavior: smooth;
 }
@@ -16,13 +16,13 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 10px 8%;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 200px;
 }
 
 nav ul li {
@@ -69,6 +69,7 @@ nav ul li a:hover::after {
     font-size: 30px;
 }
 
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
@@ -81,7 +82,7 @@ nav ul li a:hover::after {
 /* ----------about------------ */
 #about {
     padding: 80px 0;
-    color: #ababab;
+    color: #ffffff;
 }
 
 .row {
@@ -107,7 +108,13 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    /* color: #fff; */
+    color: #ff004f;
+}
+.sub-title:hover
+{
+    color:#fff;
+    transition: color 1.5s;
 }
 
 .tab-titles {
@@ -123,6 +130,11 @@ nav ul li a:hover::after {
     position: relative;
 }
 
+/* .tab-links:hover
+{
+    color: #ff004f;
+} */
+
 .tab-links::after {
     content: '';
     width: 0;
@@ -131,11 +143,13 @@ nav ul li a:hover::after {
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
+    transition: 0.8s;
 }
 
 .tab-links.active-link::after {
-    width: 50%;
+    /* width: 50%; */
+    width: 80%;
 }
 
 .tab-contents ul li {
@@ -145,6 +159,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #b54769;
+    /* color: #ff004f; */
     font-size: 14px;
 }
 
@@ -191,16 +206,21 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: #fff;
+    color: #b4c0ff;
+    font-weight: bold;
     font-size: 12px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: inline-block;
+}
+.services-list div a:hover{
+    color: black;
 }
 
 .services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
 }
+
 
 /* ----------portfolio----------- */
 #portfolio {
@@ -219,6 +239,10 @@ nav ul li a:hover::after {
     position: relative;
     overflow: hidden;
 }
+
+/* .work h2:hover{
+    color: #080808;
+} */
 
 .work img {
     width: 100%;
@@ -373,7 +397,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(images/phone-background.png);
+        background-image: url(images/phone-background.jpg);
     }
 
     .header-text {

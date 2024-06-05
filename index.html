@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Manpreet Singh's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
     <script src="https://kit.fontawesome.com/b32052df2f.js" crossorigin="anonymous"></script>
-    <!-- we get the above script line from the font awesome website -->
-
 </head>
 
 <body>
@@ -21,16 +18,16 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#services">More</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Kevin</span><br>Jen From Austraila</h1>
+                <p>Computer Engineering Student</p>
+                <h1>Hi, I'm <span>Manpreet Singh</span><br>From India</h1>
             </div>
         </div>
     </div>
@@ -41,72 +38,41 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/user.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus omnis ipsam eligendi
-                        dolor dignissimos pariatur molestiae, quas necessitatibus, minus unde aliquid quos. Praesentium
-                        magni id soluta iste, suscipit harum?</p>
+                    <p>I'm a dedicated Computer Engineering student at Thapar Institute of Engineering and Technology with a strong foundation in programming, web development, and machine learning. I am passionate about solving real-world problems through technology.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('awards')">Awards and Achievements</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span><b>Programming Languages</b></span><br>C, C++, Python</li>
+                            <li><span><b>Front-End Technologies</b></span><br>HTML5, CSS, JavaScript</li>
+                            <li><span><b>Back-End Technologies & Database</b></span><br>Node.js, Express, MongoDB, SQL</li>
+                            <li><span><b>UI/UX</b></span><br>Filmora, Adobe Photoshop, Canva, Figma</li>
+                            <li><span><b>Tools</b></span><br>Linux (UBUNTU), VSCode, Git, Github, Google Colab, Matlab, Tableau</li>
+                            <li><span><b>Hardware</b></span><br>Arduino (IoT Technologies), Interfacing, Sensor (Modules) Programming</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="awards">
                         <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2019 - 2021</span><br>Team lead at StartApp LLC.</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
-                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                            <li><span><b>TIET Scholarship</b></span><br>Merit Excellence Scholarship Worth Rs. 1.5 Lakh in 3rd Semester.</li>
+                            <li><span><b>Research Paper on Li-Fi Toll Collection System (Under Review)</b></span><br>Currently working on a research paper detailing the development and implementation of a Li-Fi-based smart toll collection system. Expected to be published in a reputable journal.</li>
+                            <li><span><b>Hackathons</b></span><br>Participated in various Hackathons, organized by Thapar Societies (CCS, OWASP, MLSC). Among top 10 in MLSC.</li>
+                            <li><span><b>Sports Head</b></span><br>St. Joseph’s High School, Mandi Dabwali (2017-18)</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
-                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                            <li><span><b>2020 - 2024</b></span><br>BE in Computer Engineering, Thapar Institute of Engineering and Technology <br> (CGPA: 8.33/10.0)</li>
+                            <li><span><b>2018 - 2020</b></span><br>XII CBSE (Non-Medical), Sanawar An Institute for Children (90.6%)</li>
+                            <li><span><b>2016 - 2018</b></span><br>X ICSE, St. Joseph’s High School (93.84%)</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ---------services--------- -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi numquam unde mollitia,
-                        doloribus deleniti cupiditate expedita vel nulla in dignissimos esse laboriosam rerum
-                        exercitationem labore aperiam veniam saepe dolor!</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi numquam unde mollitia,
-                        doloribus deleniti cupiditate expedita vel nulla in dignissimos esse laboriosam rerum
-                        exercitationem labore aperiam veniam saepe dolor!</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nisi numquam unde mollitia,
-                        doloribus deleniti cupiditate expedita vel nulla in dignissimos esse laboriosam rerum
-                        exercitationem labore aperiam veniam saepe dolor!</p>
-                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
@@ -115,40 +81,70 @@
     <!-- ------------PORTFOLIO------------- -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">Project Gallery</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/work-1.jpg">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laudantium maiores
-                            exercitationem qui deleniti laborum eum soluta, assumenda, aperiam accusantium sed commodi
-                            non quas velit, vitae sequi id illum odio!</p>
-                        <a href=""><i class="fa-solid fa-link"></i></a>
+                        <h2>Li-Fi: Smart Toll Collection System</h2><br>
+                        <p>Development of a Smart Toll Collection System utilizing Li-Fi (Light Fidelity) technology for efficient data transfer. Implemented hardware components (transmitter, receiver, photodiodes) enabling efficient data transfer. End to end Webapp Dev. using HTML, CSS and Python providing real-time updates on toll deductions.</p>
+                        <a href="https://github.com/Tracer786/LIFI-CAPSTONE-PROJECT" target="_blank"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/work-2.jpg">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laudantium maiores
-                            exercitationem qui deleniti laborum eum soluta, assumenda, aperiam accusantium sed commodi
-                            non quas velit, vitae sequi id illum odio!</p>
-                        <a href=""><i class="fa-solid fa-link"></i></a>
+                        <h2>MedieGenie (Medicine Recommendation System)</h2><br>
+                        <p>An end-to-end website using HTML, CSS with Flask backend, enabling text and audio inputs. Curated datasets and performed extensive data preprocessing to generate accurate prediction. Used various Machine Learning classification models to predict Disease based on symptoms.</p>
+                        <a href="https://github.com/Tracer786/MediGenie" target="_blank"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.png">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laudantium maiores
-                            exercitationem qui deleniti laborum eum soluta, assumenda, aperiam accusantium sed commodi
-                            non quas velit, vitae sequi id illum odio!</p>
-                        <a href=""><i class="fa-solid fa-link"></i></a>
-                    </div>
+                        <h2>WhatsApp Chat Analyzer</h2><br>
+                        <p>Developed a Python-based WhatsApp Chat Analyzer integrated with Streamlit web application. Conducted sentiment analysis on uploaded chat data (txt format) using NLP and ML concepts. Used Data Visualization concepts to translate information in visual context (WordCloud, Graphs, Charts).</p>
+                        <a href="https://github.com/Tracer786/WhatsApp-Chat-Analyzer" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>  
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- ---------services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">More About Me</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-medal"></i>
+                    <h2>Hobbies and Interests</h2>
+                    <ul>
+                        <li>Passionate about football, photography, and music.</li><br>
+                        <li>Love to spend my free time exploring creative endeavors and experimenting with new ideas.</li><br>
+                        <li>Enthusiast of the latest technology and innovations.</li>
+                    </ul>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-file"></i>
+                    <h2>Professional Certifications</h2>
+                    <ul>
+                        <li>Machine Learning <a href="https://drive.google.com/file/d/1_yAlb61eNS0ru5YCtzNKQIHuNgBNylPS/view?usp=sharing" target="_blank">(AWS Academy)</a></li><br>
+                        <li>Data Science Specialization <a href="https://drive.google.com/drive/folders/1KH4L4HD4g7L9vnwvSCemN75vVx4an8ha?usp=sharing" target="_blank">(Coursera)</a></li>
+                    </ul><br>
+                    <p>These certifications have equipped me with valuable skills in data analysis, machine learning algorithms, and model deployment.</p>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h2>Career Goals</h2>
+                    <ul>
+                        <li>Become a proficient software engineer specializing in developing cutting-edge applications and solutions.</li><br>
+                        <li>Make a meaningful impact and contribute to the advancement of society.</li><br>
+                        <li>Solve complex problems with innovative solutions.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- -----------CONTACT------------------- -->
@@ -157,31 +153,32 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
-                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>manpreetchahal0786@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>(+91) 80546-51374</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/manpreet-singh-67334b21b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Tracer786/" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your  Message" required></textarea>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
+        <!-- ------------footer------------- -->
         <div class="copyright">
-            <p>Copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+            <p>Copyright © 2023. Made with <i class="fa-solid fa-heart"></i> by Manpreet Singh.</p>
         </div>
     </div>
+
+    
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -213,16 +210,17 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxWFtF5d-khTc2nSD29HqZQWklhgPu72Ppba8AY9PUgATsWs0Zn0Nj_1qMX_k5clvc/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg= document.getElementById("msg")
+        const msg = document.getElementById("msg")
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Message sent successfully"
-                    setTimeout(function(){
+                    setTimeout(function () {
                         msg.innerHTML = ""
-                    },2000)
+                    // }, 2000)
+                    },10)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
